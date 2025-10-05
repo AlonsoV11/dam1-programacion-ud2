@@ -24,28 +24,15 @@ public class InstanciacionReferenciaYComparacion {
         System.out.println(p1 == p2);
         System.out.println(p1.equals(p2));
 
+        Cancion c7 = new Cancion("Ma Chérie", "Malice Mizer");
+        Cancion c8 = c7;
+        System.out.println((c7 == c8));
+        c8.setTitutlo("Chamber Of Reflection");
+        System.out.println(c7);
 
-    
+        Pelicula p3 = null;
+        System.out.println(p3);
 
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-        
 
     }
 
