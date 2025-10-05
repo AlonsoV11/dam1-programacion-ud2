@@ -1,4 +1,5 @@
 import utilidades.Cancion;
+import utilidades.Pelicula;
 
 public class InstanciacionReferenciaYComparacion {
 
@@ -12,10 +13,16 @@ public class InstanciacionReferenciaYComparacion {
         System.out.println(c3 == c4);
         System.out.println(c3);
 
-        Cancion c5 = new Cancion("Hola", "c");
+        Cancion c5 = new Cancion("Waka Waka", "Shakira");
         Cancion c6 = new Cancion();
         System.out.println(c5.equals(c6));
         System.out.println(c5);
+
+        Pelicula p1 = new Pelicula("Godzilla", 1954);
+        Pelicula p2 = new Pelicula("Godzilla", 1954);
+        
+        System.out.println(p1 == p2);
+        System.out.println(p1.equals(p2));
 
 
     
