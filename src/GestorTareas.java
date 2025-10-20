@@ -9,8 +9,8 @@ public class GestorTareas {
         // No necesita devolver nada, solo imprimir por consola.
 
         // Tu código aquí ↓
-        bienvenida(" Alonso ");
-
+           mostrarBienvenida();
+ 
         // ================================
         // EJERCICIO 2: Duración total
         // ================================
@@ -19,10 +19,10 @@ public class GestorTareas {
         // Llama al método con 45 y 30 y muestra el resultado en consola.
 
         // Tu código aquí ↓
-         
-        int total = suma(45, 30);
-         
-         
+        
+        int totalMinutos = duracionTotal(45, 30);
+        System.out.println("Duración total: " + totalMinutos + " minutos");
+
         // ================================
         // EJERCICIO 3: Conversión de tiempo
         // ================================
@@ -32,6 +32,7 @@ public class GestorTareas {
         // No tiene que devolver nada.
 
         // Tu código aquí ↓
+        convertirHorasYMinutos(150);
 
         // ================================
         // EJERCICIO 4: Recordatorios
@@ -42,17 +43,19 @@ public class GestorTareas {
         // Solo muestra el mensaje, no devuelve nada.
 
         // Tu código aquí ↓
+        
+         mostrarRecordatorio("Revisar correo", 2);
 
         // ================================
         // EJERCICIO 5: Estado de tareas
         // ================================
-        // Crea un método que reciba un valor booleano que indique si la tarea está
-        // completada.
+        // Crea un método que reciba un valor booleano que indique si la tarea está completada.
         // Debe devolver un texto: "✅ Completada" o "⏳ Pendiente".
         // Muestra el resultado de llamar al método con ambos casos.
 
         // Tu código aquí ↓
         
+
         // ================================
         // EJERCICIO 6: Productividad
         // ================================
@@ -61,18 +64,19 @@ public class GestorTareas {
         // Muestra el resultado en consola.
 
         // Tu código aquí ↓
+        
 
         // ================================
         // EJERCICIO 7: Sobrecarga
         // ================================
         // Crea dos métodos con el mismo nombre:
         // - uno sin parámetros, que muestre un mensaje genérico (ejemplo: "Hola crack";
-        // - otro con parámetros (nombre de usuario, número de tareas completadas) "Hola
-        // {usuario} completaste {numero} de tareas"
-        // que muestre un resumen personalizado.
+        // - otro con parámetros (nombre de usuario, número de tareas completadas) "Hola {usuario} completaste {numero} de tareas"
+        //   que muestre un resumen personalizado.
         // Llama a ambos desde main.
 
         // Tu código aquí ↓
+        
 
         // ================================
         // EJERCICIO 8: Bonus - Planificación
@@ -83,38 +87,29 @@ public class GestorTareas {
         // Muestra el texto en pantalla.
 
         // Tu código aquí ↓
-
+        
     }
 
     // Aquí debéis crear los métodos fuera del main ↓↓↓
 
-    public static void bienvenida(String nombre) {
-        System.out.println("Bienvenido" + nombre);
+     public static void mostrarBienvenida() {
+        System.out.println("Bienvenido");
+     }
 
+     public static int duracionTotal(int t1, int t2) {
+         return t1 + t2;
+     }
+
+     public static void convertirHorasYMinutos(int minutos) {
+        int horas = minutos / 60;
+        int min = minutos / 60;
+
+        System.out.println("Son " + horas + " horas y " + min + " minutos.");
+        
+     }
+
+   public static void mostrarRecordatorio(String tarea, int prioridad) {
+        System.out.println("📌 [Prioridad " + prioridad + "] " + tarea);
     }
-
-    public static int suma(int a, int b) {
-        suma(45, 30);
-        return (a + b);
-
-    }
-
-    public static void Tiempo(int tiempo) {
-
-    }
-
-    public static void tarea(String prioridad) {
-
-    }
-
-    public static boolean Prioridad(boolean tarea) {
-        if (tarea) {
-            System.out.println("Completado");
-            return (tarea);
-        } else {
-            System.out.println("Incompleto");
-            return (tarea);
-        }
-    }
-
 }
+   

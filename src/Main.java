@@ -13,7 +13,7 @@ public class Main {
 
         // Tu código aquí ↓
 
-        System.out.println(cuenta.getSaldo());
+        System.out.println(cuenta.saldo);
      
         // ================================
         // EJERCICIO 2: Métodos públicos
@@ -35,12 +35,16 @@ public class Main {
 
         // Tu código aquí ↓
         
-
+        cuenta.registrarOperacion("Hackeo", 9999);
+         
         // ================================
         // EJERCICIO 4: Libre
         // ================================
         // Puedes hacer pruebas adicionales con los métodos disponibles
         // para asegurarte de que comprendes la diferencia entre public y private.
+
+        cuenta.depositar(500);
+        System.out.println("Saldo final: " + cuenta.getSaldo());
     }
 }
 
@@ -48,16 +52,15 @@ public class Main {
 // RESPUESTAS DE REFLEXIÓN
 // ================================
 // Ejercicio 1: ¿por qué no puedo acceder al saldo directamente?
-// Respuesta: ....................................................
+// Respuesta: Porque esta en privado
 
 // Ejercicio 2: ¿por qué sí puedo usar los métodos depositar(), retirar() y getSaldo()?
-// Respuesta: ....................................................
+// Respuesta: Porque esta en public
 
 // Ejercicio 3: ¿qué significa el error al intentar llamar a registrarOperacion()?
-// Respuesta: ....................................................
-
+// Respuesta: Intenta llamar un metodo que es privado
 // Ejercicio 4: 
-// - ¿Qué ventajas tiene que saldo sea private?
-// - ¿Qué pasaría si saldo fuera public?
+// - ¿Qué ventajas tiene que saldo sea private? Nadie puede modificar el saldo 
+// - ¿Qué pasaría si saldo fuera public? Cualquiera podria modificarlo directamente 
 // - ¿Por qué registrarOperacion es private en lugar de public?
 // Respuesta: ....................................................
