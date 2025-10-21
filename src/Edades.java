@@ -12,6 +12,6 @@ public class Edades {
         } else {
             System.out.println("Muerto");
         }
-        sc.close();
+        sc.close()  ;
     }
 }

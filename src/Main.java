@@ -13,7 +13,7 @@ public class Main {
 
         // Tu código aquí ↓
 
-        System.out.println(cuenta.saldo);
+        //System.out.println(cuenta.saldo);
      
         // ================================
         // EJERCICIO 2: Métodos públicos
@@ -35,7 +35,7 @@ public class Main {
 
         // Tu código aquí ↓
         
-        cuenta.registrarOperacion("Hackeo", 9999);
+        //cuenta.registrarOperacion("Hackeo", 9999);
          
         // ================================
         // EJERCICIO 4: Libre

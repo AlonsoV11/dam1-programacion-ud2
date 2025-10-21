@@ -2,7 +2,8 @@ import utilidades.Cancion;
 import utilidades.Pelicula;
 
 public class InstanciacionReferenciaYComparacion {
-
+    // Al borrar los comentarios no se muy bien que haces en cada bloque pero entiendo que
+    // has ido probando lo que había que hacer.
     public static void main(String[] args) {
         Cancion c1 = new Cancion();
         Cancion c2 = new Cancion("Clocks", "Coldplay");
@@ -14,7 +15,7 @@ public class InstanciacionReferenciaYComparacion {
         System.out.println(c3);
 
         Cancion c5 = new Cancion("Waka Waka", "Shakira");
-        Cancion c6 = new Cancion();
+        Cancion c6 = c5;
         System.out.println(c5.equals(c6));
         System.out.println(c5);
 
