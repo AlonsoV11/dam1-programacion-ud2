@@ -10,7 +10,7 @@ public class TrabajandoConMetodos {
         // ================================
         // 1. Llama al método saludar() de la clase DemoMetodos.
         // Tu código aquí ↓
-          method.saludar();
+        method.saludar();
 
 
         // ================================
@@ -19,12 +19,12 @@ public class TrabajandoConMetodos {
         // 1. Llama al método sumar(5, 3).
         // 2. Guarda el resultado en una variable e imprímelo.
         // 3. Llama al método presentar("Lucía") e imprime el resultado.
-        // Tu código aquí ↓
-       int numero = method.sumar(5,3);
+        // Tu código aquí ↓q
+        int numero = method.sumar(5, 3);
         System.out.println("Suma total:" + numero);
 
-     String nombre = method.presentar("Lucia");
-      System.out.println("Nombre: " + nombre);   
+        String nombre = method.presentar("Lucia");
+        System.out.println("Nombre: " + nombre);
         // ================================
         // EJERCICIO 3: Paso por valor (primitivos)
         // ================================
@@ -47,9 +47,9 @@ public class TrabajandoConMetodos {
         // 3. Imprime la canción después.
         // Tu código aquí ↓
 
-      Cancion c1 = new Cancion("Original", "Alonso");
-      method.cambiarTitulo(c1);
-      System.out.println("Sonido: " + c1);
+        Cancion c1 = new Cancion("Original", "Alonso");
+        method.cambiarTitulo(c1);
+        System.out.println("Sonido: " + c1);
 
     }
 }
